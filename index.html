@@ -1,12 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nandini Jain's Business Analysis and Power BI portfolio, featuring healthcare operations and claims analytics.">
-  <title>Nandini Jain | Business & Analytics Portfolio</title>
-
+  <meta name="description" content="Nandini Jain's Business Analyst portfolio, showcasing business analysis capabilities, professional experience, and a supporting healthcare analytics project.">
+  <title>Nandini Jain | Business Analyst Portfolio</title>
   <style>
     :root {
       --ink: #172033;
@@ -16,9 +14,7 @@
       --card: #ffffff;
       --border: #e4e8f0;
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -26,37 +22,32 @@
       color: var(--ink);
       line-height: 1.65;
     }
-
     header {
       background: #fff;
       border-bottom: 1px solid var(--border);
-      padding: 20px 7%;
+      padding: 18px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
-
     .brand { font-weight: 700; font-size: 18px; }
-
+    nav { display: flex; flex-wrap: wrap; gap: 20px; }
     nav a {
       color: var(--muted);
       text-decoration: none;
-      margin-left: 20px;
       font-size: 14px;
     }
-
+    nav a:hover, nav a:focus { color: var(--accent); }
     main {
       max-width: 1100px;
       margin: auto;
-      padding: 48px 24px 70px;
+      padding: 42px 24px 70px;
     }
-
-    .hero {
-      padding: 38px 0 46px;
-      max-width: 780px;
-    }
-
+    .hero { padding: 36px 0 42px; max-width: 800px; }
     .eyebrow {
       color: var(--accent);
       font-size: 12px;
@@ -64,20 +55,16 @@
       font-weight: 700;
       text-transform: uppercase;
     }
-
     h1 {
       font-size: clamp(34px, 5vw, 52px);
       line-height: 1.15;
       margin: 12px 0;
       letter-spacing: -1.5px;
     }
-
     h2 { font-size: 27px; line-height: 1.25; margin: 0 0 12px; }
     h3 { margin: 0 0 8px; font-size: 19px; }
     p { color: var(--muted); }
-
-    .hero p { font-size: 16px; max-width: 750px; }
-
+    .hero p { font-size: 17px; max-width: 760px; }
     .tag {
       display: inline-block;
       padding: 5px 11px;
@@ -87,16 +74,13 @@
       font-size: 12px;
       margin: 5px 5px 0 0;
     }
-
     section { margin-top: 42px; }
     .section-intro { margin-top: -4px; margin-bottom: 22px; }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
+      gap: 18px;
     }
-
     .card {
       background: var(--card);
       border: 1px solid var(--border);
@@ -104,9 +88,7 @@
       padding: 22px;
       overflow: hidden;
     }
-
     .wide { grid-column: 1 / -1; }
-
     .preview {
       width: 100%;
       aspect-ratio: 16 / 9;
@@ -122,14 +104,12 @@
       color: #64748b;
       font-size: 14px;
     }
-
     .preview img {
       width: 100%;
       height: 100%;
       object-fit: contain;
       border-radius: 8px;
     }
-
     .button {
       display: inline-block;
       margin-top: 8px;
@@ -141,40 +121,34 @@
       font-size: 14px;
       font-weight: 600;
     }
-
     .button.secondary { background: #eeefff; color: #4338ca; }
-
     .metrics {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 12px;
       margin-top: 22px;
     }
-
     .metric {
       background: #fff;
       border: 1px solid var(--border);
       padding: 16px;
       border-radius: 10px;
     }
-
     .metric strong { display: block; font-size: 25px; }
     .metric span { color: var(--muted); font-size: 12px; }
-
     ul { color: var(--muted); padding-left: 20px; }
     li { margin-bottom: 6px; }
-
     footer {
       text-align: center;
       padding: 25px;
       border-top: 1px solid var(--border);
       color: var(--muted);
       font-size: 13px;
+      background: #fff;
     }
-
     @media (max-width: 700px) {
       header { align-items: flex-start; flex-direction: column; }
-      nav a { margin: 0 14px 0 0; }
+      nav { gap: 14px; }
       .grid { grid-template-columns: 1fr; }
       .wide { grid-column: auto; }
       .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -182,78 +156,90 @@
     }
   </style>
 </head>
-
 <body>
-
   <header>
     <div class="brand">Nandini Jain</div>
-    <nav>
-      <a href="#about">About</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#experience">Experience</a>
       <a href="#project">Project</a>
-      <a href="#approach">Approach</a>
     </nav>
   </header>
 
   <main>
-
-    <!-- ABOUT ME SECTION -->
-    <div class="hero" id="about">
-
-      <div class="eyebrow">About Me · Business Analyst</div>
-
-      <h1>Bridging business needs with meaningful solutions.</h1>
-
+    <section class="hero" id="home">
+      <div class="eyebrow">Business Analyst</div>
+      <h1>Turning business needs into clear, actionable solutions.</h1>
       <p>
-        I'm Nandini Jain, a Business Analyst with experience translating
-        business objectives into functional requirements and actionable
-        solutions. I work at the intersection of business and technology,
-        ensuring stakeholder expectations, user needs, and development
-        priorities remain aligned.
+        I'm Nandini Jain, a Business Analyst who works at the intersection of
+        business and technology—translating business objectives into functional
+        requirements and helping teams move from problems to practical solutions.
       </p>
+      <div>
+        <span class="tag">Business Analysis</span>
+        <span class="tag">Requirements Engineering</span>
+        <span class="tag">Agile &amp; Scrum</span>
+        <span class="tag">Product Thinking</span>
+      </div>
+      <a class="button" href="about.html">More about me</a>
+    </section>
 
-      <p>
-        My experience spans Stakeholder Management, Requirement Elicitation
-        & Analysis, Backlog Refinement & Prioritization, User Story Creation,
-        Acceptance Criteria Definition, Functional Solution Design &
-        Documentation, and Process Modelling. I contribute to sprint
-        planning, Agile ceremonies, and cross-functional collaboration
-        to drive effective execution and continuous product improvement.
-      </p>
-
-      <p>
-        I enjoy understanding business problems, breaking them down into
-        meaningful requirements, identifying opportunities for improvement,
-        and working with teams to turn ideas into practical solutions.
-        My approach combines analytical thinking, business understanding,
-        and a strong focus on delivering business value.
-      </p>
-
-      <p>
-        Alongside my Business Analysis experience, I am developing my
-        data analytics capabilities through hands-on Power BI projects,
-        exploring how data-driven insights can support better business
-        and operational decisions.
-      </p>
-
-      <span class="tag">Business Analysis</span>
-      <span class="tag">Product Thinking</span>
-      <span class="tag">Stakeholder Management</span>
-      <span class="tag">Agile & Scrum</span>
-      <span class="tag">Requirements Engineering</span>
-      <span class="tag">Power BI</span>
-
-    </div>
-
-    <!-- FEATURED PROJECT SECTION -->
-    <section id="project">
-
-      <div class="eyebrow">Featured project</div>
-      <h2>Healthcare Operations &amp; Claims Analytics</h2>
-
+    <section id="capabilities">
+      <div class="eyebrow">Core capabilities</div>
+      <h2>How I contribute</h2>
       <p class="section-intro">
-        A multi-page analytics project designed to bring operational
-        performance and insurance claims metrics into a clear reporting
-        experience. The project uses synthetic data for demonstration.
+        Turning business context into structured requirements and supporting
+        teams through the delivery lifecycle.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <h3>Requirements &amp; analysis</h3>
+          <ul>
+            <li>Stakeholder management</li>
+            <li>Requirement elicitation and analysis</li>
+            <li>User stories and acceptance criteria</li>
+            <li>Functional solution design and documentation</li>
+            <li>Process modelling</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Agile delivery &amp; collaboration</h3>
+          <ul>
+            <li>Backlog refinement and prioritization</li>
+            <li>Sprint planning and Agile ceremonies</li>
+            <li>Cross-functional communication</li>
+            <li>Supporting development teams with requirement clarity</li>
+            <li>User Acceptance Testing (UAT)</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="eyebrow">Professional experience</div>
+      <h2>Business Analyst</h2>
+      <article class="card">
+        <h3>Unthinkable Solutions LLP</h3>
+        <p>
+          Working across business and technology to understand stakeholder
+          needs, analyse requirements, and translate them into functional
+          documentation that supports development and delivery. The role
+          involves maintaining requirement clarity, contributing to Agile
+          practices, and supporting alignment across stakeholders and
+          cross-functional teams.
+        </p>
+      </article>
+    </section>
+
+    <section id="project">
+      <div class="eyebrow">Supporting project · Data analytics</div>
+      <h2>Healthcare Operations &amp; Claims Analytics</h2>
+      <p class="section-intro">
+        A supporting Power BI project that demonstrates business-focused
+        analysis, KPI definition, data organization, operational trends, and
+        reporting. The project uses synthetic data for demonstration.
       </p>
 
       <div class="metrics">
@@ -264,7 +250,6 @@
       </div>
 
       <div class="grid" style="margin-top:22px">
-
         <article class="card wide">
           <h3>Executive Dashboard</h3>
           <p>High-level view of healthcare activity, operational trends, and claims performance.</p>
@@ -272,7 +257,6 @@
             <img src="Executive%20Overview.png" alt="Executive Dashboard screenshot">
           </div>
         </article>
-
         <article class="card">
           <h3>Operations Analytics</h3>
           <p>Explores encounters by department, average length of stay, and monthly trends.</p>
@@ -280,7 +264,6 @@
             <img src="Operations.png" alt="Operations Analytics screenshot">
           </div>
         </article>
-
         <article class="card">
           <h3>Claims Analytics</h3>
           <p>Examines claims status and financial measures to support performance monitoring.</p>
@@ -288,7 +271,6 @@
             <img src="Claims.png" alt="Claims Analytics screenshot">
           </div>
         </article>
-
         <article class="card wide">
           <h3>Power BI Service Dashboard</h3>
           <p>A consolidated view of key metrics from the published project.</p>
@@ -296,51 +278,33 @@
             <img src="Dashboard.png" alt="Power BI Service dashboard screenshot">
           </div>
         </article>
-
-      </div>
-    </section>
-
-    <!-- PROJECT APPROACH SECTION -->
-    <section id="approach">
-
-      <div class="eyebrow">Project approach</div>
-      <h2>What this project demonstrates</h2>
-
-      <div class="grid">
-
-        <article class="card">
-          <h3>Data modelling &amp; measures</h3>
-          <ul>
-            <li>Structured date, dimension, and fact tables.</li>
-            <li>Relationships to support analysis across business areas.</li>
-            <li>DAX measures for KPI calculations and time-based reporting.</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Business-focused reporting</h3>
-          <ul>
-            <li>Selected KPIs to summarize performance.</li>
-            <li>Visuals to compare trends, departments, and claim statuses.</li>
-            <li>Report pages organized around distinct analytical questions.</li>
-          </ul>
-        </article>
-
       </div>
 
-      <p>
-        <strong>Data note:</strong> The project is intended as a portfolio
-        demonstration using synthetic data. Metrics are illustrative and
-        should not be interpreted as real-world clinical findings.
-      </p>
-
+      <article class="card" style="margin-top:18px">
+        <h3>What this project demonstrates</h3>
+        <div class="grid">
+          <div>
+            <strong>Data modelling &amp; measures</strong>
+            <ul>
+              <li>Structured date, dimension, and fact tables.</li>
+              <li>Relationships to support analysis across business areas.</li>
+              <li>DAX measures for KPI calculations and time-based reporting.</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Business-focused reporting</strong>
+            <ul>
+              <li>Selected KPIs to summarize performance.</li>
+              <li>Visuals to compare trends, departments, and claim statuses.</li>
+              <li>Report pages organized around distinct analytical questions.</li>
+            </ul>
+          </div>
+        </div>
+        <p><strong>Data note:</strong> This portfolio demonstration uses synthetic data. Metrics are illustrative and should not be interpreted as real-world clinical findings.</p>
+      </article>
     </section>
-
   </main>
 
-  <footer>
-    Nandini Jain · Business Analysis &amp; Power BI Portfolio
-  </footer>
-
+  <footer>Nandini Jain · Business Analyst Portfolio</footer>
 </body>
 </html>
